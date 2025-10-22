@@ -1,0 +1,710 @@
+introducao:
+  texto: "
+        Introdução
+        O que é ATHAS?
+        'Eu vivo em um mundo de fogo e areia. O sol carmesim queima a vida de qualquer
+        coisa que rasteje ou voe, e tempestades de areia esfolam a folhagem do solo estéril.
+        Esta é uma terra de sangue e poeira, onde tribos de elfos selvagens irrompem das
+        planícies de sal para pilhar caravanas solitárias, ventos misteriosos e cantantes
+        chamam os viajantes para uma lenta sufocação no Mar de Silte, e reis egoístas
+        esbanjam a vida de seus súditos construindo palácios chamativos e túmulos
+        extravagantes. Este ermo desolado é Athas, e é o meu lar.' — O Diário do Andarilho
+
+        Abaixo de um sol carmesim, encontram-se ermos de desolação majestosa
+        e cidades de esplendor cruel, onde heróis de sandálias combatem
+        feitiçaria ancestral e monstros terríveis. Este é Athas, o
+        mundo do cenário de campanha DARK SUN, um planeta moribundo de
+        selvageria e desolação. A vida pende por um fio nesta terra árida,
+        que é impiedosa com os fracos, e agora cabe a você
+        escrever sua própria história com sangue e glória.
+
+        1. O MUNDO É UM DESERTO
+        Desde os primeiros momentos do amanhecer até o último lampejo do crepúsculo, o
+        sol carmesim cintila no céu tingido de oliva como uma poça de fogo e sangue. Ele soja
+        em direção ao zênite e a temperatura sobe implacavelmente: 38°C no meio da manhã,
+        43°C ao meio-dia, 54°C - às vezes até 65°C - no final da tarde. Um homem não
+        consegue beber rápido o suficiente para repor os fluidos que perde. Conforme os dias
+        passam, ele se sente doente e fraco. Se não tiver água suficiente, fica fraco demais
+        para se mover. Sua boca fica seca e amarga, seus lábios, língua e garganta incham. Em
+        pouco tempo, seu sangue fica espesso e pegajoso. Seu coração precisa trabalhar
+        muito para circulá-lo. Finalmente, seu sistema superaquece, deixando-o morto e
+        sozinho nas areias.
+
+        Não há rios ou lagos, e os bolsões de civilização estão concentrados em oásis
+        isolados, onde a água é mais preciosa que a vida. Mas nem tudo é um ermo. Sob as
+        areias, encontram-se ruínas ancestrais, testemunhas de um tempo anterior ao
+        deserto, e as cidades-estado são uma maravilha por si só.
+
+        2. Mundo é selvagem.
+        A vida em Athas é brutal e curta. Saqueadores sanguinários, mercadores de escravos
+        gananciosos e hordas de selvagens implacáveis assolam os desertos e ermos. As
+        cidades não são muito mais seguras; cada uma sufoca sob o controle de um tirano
+        imortal. A escravidão é generalizada em Athas, e muitos desafortunados passam suas
+        vidas acorrentados, labutando para taskmasters brutais. Todos os anos, centenas de
+        escravos, talvez milhares, são enviados à morte em espetáculos sangrentos de arena.
+        Caridade, compaixão, bondade - essas qualidades existem, mas são flores raras e
+        preciosas. Apenas um tolo espera por tais riquezas.
+
+        3. A MAGIA ARCANA DEFILA O MUNDO
+        O uso irresponsável da magia arcana durante as guerras antigas reduziu Athas a um
+        ermo. Para lançar um feitiço arcano, um usuário de magia suga o poder do mundo vivo.
+        As plantas próximas murcham até virar cinza, uma dor paralisante atinge animais e
+        pessoas, e o solo é esterilizado permanentemente. É possível lançar feitiços com
+        cuidado, evitando causar mais danos ao mundo, mas defilar é mais fácil e rápido do
+        que preservar. Como resultado, feiticeiros, magos e outros usuários de magia arcana
+        são detestados e perseguidos por toda Athas, independentemente de preservarem ou
+        defilarem. Apenas os conjuradores mais poderosos podem usar suas habilidades
+        arcanas sem medo de represálias.
+
+        4. REIS FEITICEIROS GOVERNAM AS CIDADES
+        Teríveis defiladores de poder imenso governam todas as cidades-estado. Esses
+        poderosos conjuradores ocupam seus tronos há séculos; ninguém vivo se lembra de
+        um tempo antes dos reis-feiticeiros. Alguns afirmam ser deuses, e outros professam
+        servir a deuses. Alguns são opressores brutais, enquanto outros são mais sutis em sua
+        tirania. Os reis-feiticeiros governam através de sacerdócios ou burocracias de
+        templários gananciosos e ambiciosos, que canalizam seu poder. Em todas as
+        aparências, eles são os deuses deste mundo.
+
+        5. OS DEUSES ESTÃO EM SILÊNCIO
+        Athas é um mundo sem divindades. Nenhum clérigo, paladino ou profeta vive aqui.
+        Ordens religiosas são dedicadas a reis-feiticeiros que reivindicam divindade. Antigos
+        santuários e templos em ruínas encontram-se no meio de ruínas ancestrais,
+        testemunhando uma época em que agentes desconhecidos falavam ao povo de Athas.
+        Aqueles que reivindicam poderes clericais o fazem através da adoração dos
+        elementos: o sol, a areia, a tempestade, e o mais raro de todos, a água.
+
+        6. MONSTROS FEROIS PERCORREM O MUNDO
+        O planeta deserto tem sua própria ecologia mortal. Muitas criaturas que são visuais
+        familiares em mundos mais amenos há muito foram extintas ou nunca existiram em
+        Athas. O mundo não tem gado, porcos ou cavalos; em vez disso, as pessoas cuidam de
+        rebanhos de erdlus, montam em kanks ou crodlus, e puxam carroças com inixes e
+        mekillots. Criaturas selvagens como leões, ursos e lobos são quase inexistentes. Em
+        seu lugar, existem terrores como o id fiend, o baazrag e o tembo. Talvez o ambiente
+        hostil de Athas crie criaturas resistentes e viciosas o suficiente para sobreviver a ele,
+        ou talvez o toque da feitiçaria ancestral tenha envenenado as fontes da vida e infligido
+        monstro após monstro ao mundo moribundo. De qualquer forma, os desertos são
+        perigosos, e apenas um tolo ou um lunático viaja por eles sozinho.
+        "
+  proximo: "inicio_historia"
+
+inicio_historia:
+  texto: 
+    "O dia chegou a seu momento mais quente, quando apenas os mais desesperados mercadores mantêm suas lojas abertas. 
+    As ruas permanecem desertas, a não ser por alguns pobres pedintes que não têm outro lugar para ficar.
+
+    Um par de elfos, Prithen e Nandlex, de aparência desordeira, entra no centro comercial. 
+    Eles são altos e esguios, com suas peles de um marrom enrugado pelo sol. 
+    Suas roupas são lúgubres, mas de cortes finos que denotam uma alta posição em sua tribo.
+
+    Numa das vielas, um meio-elfo, Orman do Enno, se aconchega na sombra de uma loja de vinhos. 
+    Suas roupas estão sujas e esfarrapadas. Conforme os elfos passam, ele tenta mendigar alguns décimos deles. O par para e um diz:
+
+    “Cale a boca, produto de raças! Sujeira de dedão de inix!” O mendigo cospe em resposta e 
+    os elfos atacam com violentos chutes. Eles planejam bater no mendigo até a morte.
+
+    Os elfos desdém com arrogância. Chutando o meio-elfo, mesmo com ele todo encolhido em posição fetal. 
+    Cada chute é acompanhado por um insulto desdenhoso e uma risada cruel. Atacar mendigos é o que estes dois fazem para se divertir.
+    
+    Diálogo:
+    “Vira-lata de mulher humana!”
+    “Orelhas élficas num corpo humano – Nós deveríamos cortá-las fora!”
+    “E isto é por manchares as minhas vestes com seu sangue, verme!”
+
+    Opções:
+    1. Ignorancia é uma virtude
+    Sem intenção nenhuma de ajudá-lo, você segue em frente enquanto ouve os murmúrios de socorro vindo daquele pobre indivíduo.
+
+    2. Ação Direta e Silenciosa
+    Você não fala. Em vez disso, avança rapidamente, empurrando o elfo mais próximo com força brutal 
+    contra a parede e colocando-se entre os agressores e o mendigo. Sua postura é de luta, suas mãos prontas para empunhar uma arma ou lutar.
+
+    3. O Chamado à Razão
+    Vocês realmente querem manchar suas linhagens com o sangue de um mendigo? A morte dele não trará honra, só trará o 
+    interesse indesejado dos Templários. Caminheme esqueçam esta insignificância.
+    "
+  opcoes:
+    - texto: "Ignorancia é uma virtude"
+      proximo: "ingnorancia_e_uma_virtude"
+    - texto: "Ação Direta e Silenciosa"
+      proximo: "acao_direta_e_silenciosa"
+    - texto: "O Chamado à Razão"
+      proximo: "chamado_razao"
+
+ingnorancia_e_uma_virtude:
+  texto: "Vocês seguem em frente, sem nenhum empecilho."
+  opcoes:
+    - texto: 
+      proximo: 
+    - texto: 
+      proximo: 
+
+acao_direta_e_silenciosa:
+  texto: 
+      "Sem uma palavra, você se torna um redemoinho de ação. Seu ombro atinge Nandlex 
+      com força total, arremessando-o contra a parede de pedra com um baque surdo. Você 
+      gira, assumindo uma postura de combate, seus olhos prometendo violência.
+
+      O elemento surpresa é total. Nandlex grunhe, atordoado. Prithen salta para trás, os 
+      olhos arregalados, pegando a adaga no cinto. O ataque cessou.
+      
+      Prithen: Insano! Você morre por esta escória? 
+      A raiva deles agora está totalmente voltada para você, mas você quebrou o ritmo da 
+      surra. Orman está salvo por agora, mas a luta de verdade está prestes a começar. 
+      Mesmo com os Elfos perdendo, mais e mais deles começam a aparecer. Enfim todos 
+      vocês são derrotados e templários em busca de mendigos para escravizar, acham 
+      todos vocês que são levados até a senzala."
+  opcoes:
+    - texto: 
+      proximo: 
+    - texto: 
+      proximo: 
+
+chamado_razao:
+  texto: "
+      Você fala com uma calma gelada, tentando alcançar um fio de racionalidade neles.
+
+      Vocês realmente querem manchar suas linhagens com o sangue de um mendigo? A morte dele não trará honra, 
+      só trará o interesse indesejado dos Templários. Caminhem e esqueçam esta insignificância. 
+
+      Prithen para de chutar e ri, uma risada áspera e desdenhosa. Prithen: 
+      Honra? Você fala de honra com a sujeira de dedão de inix? 
+      
+      Ele cospe no chão perto de você. Nossa honra é limpar as ruas. E parece que temos mais lixo para coletar hoje.
+      
+      Os dois elfos se viam completamente para você, abandonando o mendigo. Eles sacam suas adagas em uníssono. 
+      Você não os dissuadiu; você apenas conseguiu dois novos alvos.
+
+      Mesmo com os Elfos perdendo, mais e mais deles começam a aparecer. Enfim todos vocês são derrotados e 
+      templários em busca de mendigos para escravizar, acham todos vocês que são levados até a senzala.  
+    "
+  opcoes:
+    - texto: 
+      proximo:
+
+
+ofensiva_seria:
+  texto: 
+      "
+      O céu vermelho sobre Tyr é mesclado com a fuligem de fogos de cozinha; o odor forte
+      de temperos exóticos ainda paira no ar. Um fraco calor radia das paredes de pedra e as
+      pessoas se apressam fervorosamente pelas ruas. Conforme vocês viram a esquina,
+      alguém os derruba sobre a barraca de um vendedor de frutas.
+      Você é empurrado de propósito por um gladiador escravo de um jovem nobre. Três
+      gladiadores estão insensivelmente abrindo caminho para seu mestre pela multidão.
+      Em meio ao empurrão você tromba em uma mesa de frutas, então imediatamente o
+      vendedor de frutas grita em fúria.
+
+      Diálogo
+      Olhe para isto! As melhores frutas em Tyr – todas arruinadas e amassadas!
+
+      Tu és um filho de inix! Nenhum outro ladrão pode ser tão estúpido.
+
+      Eu, Senador Verrasi, não aceito ameaças de plebeus. Templários, lidem com eles!
+      [Tinir de moedas]
+
+      Ladrão?! Eu sou ladrão?! Meu mestre irá me bater com mil varas quando ele ouvir
+      isto!
+
+      Opções
+      A Acusação Rápida:
+      Este gladiador foi quem nos empurrou! O Senador Verrasi ordenou que abrissem
+      caminho pela força! Ele é o verdadeiro responsável!
+
+      A Compensação Imediata:
+      (Voltando-se para o vendedor, ignorando o nobre) Calma, amigo. Foi um acidente
+      infeliz. Deixe-me compensar você por todas as frutas e pelo susto. Aqui, tome o dobro
+      do seu valor.
+
+      A Intimidação Silenciosa:
+      (Você se levanta lentamente, sem quebrar o contato visual com o gladiador que os
+      empurrou. Sua mão repousa no cabo de sua arma. Para o vendedor, com voz baixa e
+      perigosa): Você realmente quer transformar um acidente em um problema para a sua
+      saúde?
+      "
+  opcoes:
+    - texto: "acusacao_rapida"
+      proximo: "acusacao_rapida"
+    - texto: "compensacao_imediata"
+      proximo: "compensacao_imediata"
+    - texto: "intimidacao_silenciosa"
+      proximo: "intimidacao_silenciosa"
+
+acusacao_rapida:
+  texto:
+      "
+      Você aponta um dedo acusador na direção do gladiador e, por extensão, do Senador
+      Verrasi. Sua voz ecoa na rua, atraindo a atenção de todos os curiosos.
+
+      Este gladiador foi quem nos empurrou! O Senador Verrasi ordenou que abrissem
+      caminho pela força! Ele é o verdadeiro responsável!
+
+      O rosto do Senador Verrasi se contorce de fúria e surpresa. Ele não esperava ser
+      confrontado. O vendedor de frutas, vendo uma chance de lucrar com alguém muito
+      mais rico, volta sua fúria para o nobre.
+
+      Vendedor: É verdade! Eu vi! Seus brutamontes destruíram minha mercadoria! O
+      Senado vai ouvir sobre isso!
+
+      Os Templários, pegados no meio, hesitam. As moedas do suborno agora parecem um
+      risco muito alto. O líder deles se vira para Verrasi.
+
+      Líder dos Templários: Senador, sua presença está causando um distúrbio.
+      Aconselho que se retire. E você, vendedor, apresente sua queixa formalmente no
+      templo. O caso está encerrado.
+
+      Vocês se safam, contudo o nobre parece que marca os seus rostos.
+      "
+
+  opcoes:
+    - texto: 
+      proximo:
+
+compensacao_imediata:
+  texto:
+      "
+      Você ignora o nobre e se ajoelha, começando a recolher algumas frutas intactas. Sua
+      voz é calma e prática ao se dirigir ao vendedor.
+      
+      Calma, amigo. Foi um acidente infeliz. Deixe-me compensar você por todas as
+      frutas e pelo susto. Aqui, tome o dobro do seu valor.
+
+      A fúria do vendedor se dissolve instantaneamente em confusão e depois em pura
+      ganância. Seus olhos brilham ao contar as moedas que você coloca em sua mão.
+      Vendedor: Bem... sim! Um cidadão honesto, vejam só! Um erro, nada mais. Obrigado,
+      estrangeiro!
+
+      O Senador Verrasi solta uma risada seca e desdenhosa.
+      Senador Verrasi: Pensamento pequeno para pessoas pequenas. Pelo menos um de
+      vocês conhece seu lugar. Vamos. 
+      
+      Ele e seus gladiadores seguem caminho, sem olhar para trás. Os Templários, sem conflito para resolver, se dispersam.
+
+      Vocês gastam todo o dinheiro por frutas que nem mesmo consumiram.
+      "
+  opcoes:
+    - texto: 
+      proximo:
+
+intimidacao_silenciosa:
+  texto:
+      "
+      Você se levanta com uma lentidão calculada. Seus olhos se fixam no gladiador que os
+      empurrou, e sua mão repousa sobre o cabo de sua arma. Sua voz sai como um sussurro gelado
+      dirigido ao vendedor:
+      “Você realmente quer transformar um acidente em um problema para a sua
+      saúde?”
+
+      O vendedor empalidece. Ele olha para você, depois para os gladiadores e para os Templários.
+      O lucro não vale a vida.
+
+      Vendedor: “N-Não é necessário… foi um mal-entendido! Por favor, sigam em frente!”
+
+      No entanto, seu ato de desafio não passou despercebido. O gladiador que você
+      encarou rosna e dá um passo à frente, batendo o punho no peito.
+
+      Gladiador: “Você acha que é durão? Venha medir forças!”
+
+      O Senador Verrasi sorri, divertido. “Parece que o lixo quer lutar. Malk, divirta-se.”
+      No fim, Malk os derrota com seu poder avassalador.
+      "
+  opcoes:
+    - texto: 
+      proximo:
+
+
+refugio_perigoso_estalagem:
+  texto:
+      "
+        O ar frio nos pulmões e o vinho doce nos lábios acalmam a tensão do dia. 
+        Por toda parte, o tilintar animado de canecas e a algazarra de conversas enchem 
+        o ar, e o rico aroma de carne grelhada anuncia a refeição que se aproxima. 
+        Vocês se acomodaram em uma mesa; um assento permanece vazio.
+
+        De repente, a porta da estalagem é escancarada por uma mulher que entra 
+        freneticamente. Seus olhos percorrem o salão, mesa a mesa. Quando ela se aproxima 
+        de vocês, um tumulto alcança a entrada. A mulher, Mahlanda, senta-se abruptamente 
+        no lugar vazio da sua mesa, como se sempre tivesse pertencido a ela.
+
+        Três Templários, acompanhados por oito guardas musculosos, marcham para dentro 
+        do salão e bloqueiam todas as saídas. O líder, Templário Mundar, exige asperamente:
+        'Onde está o Preservador renegado?' Um silêncio pesado cai sobre o local.
+
+        A busca deles começa numa mesa distante e avança... lentamente em sua direção.
+        Vários clientes lançam olhares desdenhosos à mulher em sua mesa. A mensagem é 
+        clara: ninguém aqui ajudará vocês se a situação degringolar.
+
+        Mahlanda tenta parecer calma, mas seus olhos estudam cada um de vocês,
+        buscando um sinal de aliado ou inimigo.
+
+        Templário Mundar: 'O Rei Kalak favorecerá qualquer um que nos ajude!'
+        Um capanga torce o pescoço de um homem em outra mesa, gritando: 
+        'Olhe para o Templário Mundar quando ele estiver falando!'
+
+        De repente, Mahlanda se vira para um de vocês com um sorriso forjado e diz, 
+        em voz alta o suficiente para os Templários ouvirem: 'Faz tanto tempo! Como vai 
+        a família?'
+
+        O momento da decisão chegou. Os Templários estão a apenas duas mesas de 
+        distância. O que vocês fazem?
+
+        Opções:
+
+        A Farsa
+        'Ah, prima! Que surpresa! A família está bem, graças aos céus. Venha, sente-se, 
+        conte-nos tudo!' (Você tenta enganar os Templários, fingindo ser uma conhecida.)
+
+        O Silêncio Culpado
+        Você não responde a Mahlanda. Evita contato visual com todos, esperando a tempestade 
+        passar. Sua inação é tão suspeita quanto uma confissão.
+
+        Entregá-la
+        Você se levanta e aponta para Mahlanda. 'Ela está aqui! Ela é a Preservadora!' 
+        (Você tenta entregá-la para salvar sua própria pele.)
+      "
+  opcoes:
+    - texto: "A Farsa"
+      proximo: "farsa"
+    - texto: "O Silêncio Culpado"
+      proximo: "silencio_culpado"
+    - texto: "Entregar-la"
+      proximo: "entregar_la"
+
+farsa:
+  texto:
+      farsa:
+        texto:
+          "
+          Você entrega sua fala com um sorriso caloroso. Por um instante, parece funcionar.
+          Mahlanda solta um suspiro de alívio. No entanto, o Templário Mundar não se afasta.
+          Ele se aproxima lentamente, seus olhos frios analisando cada rosto na mesa.
+
+          Templário Mundar: 'Sua 'família'...', ele diz com um tom cortante. '...é muito diversa.
+          Um elfo, um humano do norte, um meio-gigante... e uma 'prima' de Muls. Curioso.' Ele
+          para atrás da sua cadeira. 'Você mente. E no reino do Rei Kalak, mentir para um
+          Templário é tão grave quanto abrigar um Preservador. Algemem todos! São todos
+          cúmplices!'
+
+          Os guardas avançam. Qualquer tentativa de luta é rapidamente sufocada pelo número
+          esmagador. Vocês são todos algemados
+          "
+  opcoes:
+    - texto: 
+      proximo:
+
+silencio_culpado:
+  texto:
+      "
+      Seu silêncio é ensurdecedor. Mahlanda pisca, confusa e então desesperada, enquanto
+      percebe que não terá ajuda. Os clientes ao redor, temendo serem associados ao
+      silêncio cúmplice, começam a apontar discretamente e a se afastar de sua mesa.
+
+      Templário Mundar: (Seguindo os olhares dos clientes diretamente até vocês) 'O
+      silêncio dos ratos sempre os entrega.' Ele encosta as mãos na mesa, inclinando-se.
+      'Se não têm nada a esconder, por que não falam? Porque não a denunciam?' Ele não
+      espera uma resposta. 'Preguiça de falar é um crime. Prisão para todos! Por obstrução
+      ativa.'
+
+      Não há como lutar. As algemas são colocadas. Vocês são arrastados para fora.
+      "
+  opcoes:
+    - texto: 
+      proximo:
+
+entregar_la:
+  texto:
+      "
+      Você se levanta e aponta para Mahlanda. 'Ela está aqui! Ela é a Preservadora!
+      Cumpram a palavra do Rei Kalak!'
+
+      A ação é tão repentina que paralisa a todos. Os guardas avançam e agarram Mahlanda,
+      que lança um olhar de puro ódio em sua direção. O Templário Mundar se aproxima de
+      você com um sorriso estreito.
+
+      Templário Mundar: 'Um cidadão... 'leal'.' Ele pega a moeda de prata, mas em vez de
+      entregá-la, a faz dançar entre os dedos. 'Mas eu me pergunto... se você é tão rápido
+      para traçar uma estranha, o que faria a um companheiro? Kalak precisa de
+      trabalhadores obedientes, não de cobras oportunistas. É muito mais seguro ter você
+      sob vigilância. Peguem este também!'
+
+      Antes que você possa protestar, os guardas o agarram. Seus companheiros de grupo
+      olham para você com desprezo. O traidor foi traído pela própria natureza.
+      "
+  opcoes:
+    - texto: 
+      proximo:
+
+
+senzala:
+  texto:
+      "
+      Introdução:
+
+      A liberdade é uma memória distante, apagada pelo calor implacável do sol de Tyr. O
+      processo foi metódico e desumanizante: suas roupas, queimadas; seus corpos,
+      raspados e reduzidos a meras sombras; sua identidade, substituída por uma tanga
+      suja, um cobertor esfarrapado e um cantil vazio que se tornou o objeto mais
+      importante de sua existência. Agora, você é apenas mais um corpo no vasto e
+      poeirento canteiro de obras do Zigurate, um número em um grupo de trabalho,
+      condenado a carregar, cortar e suar sob o chicote de um supervisor que é tão escravo
+      quanto você, mas que chicoteia com o vigor desesperado de quem luta para não cair
+      novamente no abismo.
+
+      Os dias se arrastam em um ciclo de agonia. Antes do amanhecer, a luta diária por um
+      gole de água começa. Aqueles que falham, definham. Sob um sol que derrete a
+      vontade, você carrega pedras, mistura lama ou puxa cordas sob a ameaça constante
+      do açoite. A morte é uma sombra familiar—um escravo que cai de exaustão, um
+      gladiador em potencial levado para os poços, um corpo varrido pela equipe de limpeza
+      ao anoitecer. Quando o sol finalmente se põe, uma tigela de mingau podre é seu
+      prêmio por ter sobrevivido mais um dia, antes que você caia no sono, ao relento,
+      sabendo que o amanhecer trará a mesma provação. A única certeza é que o Zigurate
+      deve crescer, não importa quantos de vocês sejam consumidos por ele.
+      "
+  proximo: "provocacao_canteiro_obras"
+
+provocacao_canteiro_obras:
+  texto:
+      "
+      Um estranho estrondo se levanta sobre os guinchos dos supervisores e tu levantas a
+      tua fronte queimada de sol para ver o distúrbio. Uma multidão de escravos
+      rapidamente se reúne ao redor do som, se acotovelando. Conforme tu dobras o teu
+      pescoço para conseguir enxergar, um uivo estridente atinge os escravos amontoados,
+      que se espalham procurando segurança. No centro da roda, um meio-gigante de
+      postura relaxada rodopia, golpeando violentamente com enormes mãos os ágeis elfos
+      que o atormentam.
+
+      Seis elfos provocam um meio-gigante estabanado chamado Urrgos. Eles usam sua
+      velocidade e agilidade para escapar de seus punhos, gritando cruéis provocações que
+      satirizam sua feiúra, lentidão e burrice. Frustrado, Urrgos não consegue igualar os
+      insultos verbais e reage com violência bruta, golpeando o ar e jogando punhados de
+      areia.
+
+      Diálogo dos Elfos:
+      “Ei, Urrgos – você pode fugir ser eu!” [Coro de “não, eu – não, eu” Dos outros
+      elfos.]
+
+      “Saquei! Você está imitando um kank, certo?”
+
+      “Ele é uma pedra! Não – pedras se movem mais rápido que ele.”
+
+      Diálogo de Urrgos:
+      “Você vai embora! Você deixa Urrgos em paz!”
+
+      “Urrgos não querer ser como você, pequeno inseto.”
+
+      A menos que algo seja feito, os elfos retornarão para atormentar Urrgos e ele parece
+      que está à beira de um limite para que sua fúria destruidora seja liberta.
+
+      Opções:
+      1. Intromerter-se:
+      Avançar e coloque-se entre os elfos e Urrgos. Enfrentando os líderes com uma postura
+      agressiva, mostrando que você não tem medo de lutar.
+
+      2. Acalmar Urggos:
+      Aproxime-se de Urrgos com calma e tente conversar com ele, mostrando uma forma
+      melhor de lidar com as provocações. Torne-se seu modelo.
+
+      3. Ignorar e Observar:
+      Mantenha-se afastado e apenas observe o desenrolar da situação. Não é seu
+      problema.
+
+      "
+  opcoes:
+    - texto: "Intromerter-se"
+      proximo: "intrometer_se"
+    - texto: "Acalmar Urggos"
+      proximo: "acalmar_urggos"
+    - texto: "Ignorar e Observar"
+      proximo: "ignorar_observar"
+
+intrometer_se:
+  texto:
+      "
+      Você avança com passo firme, colocando-se diante do elfo mais provocador. Seu olhar
+      é uma promessa de violência.
+
+      'O próximo que insultá-lo, vai responder para mim.''
+
+      Os elfos param, surpresos pela audição. Eles avaliam você e o grupo ao seu redor. O
+      líder cospe no chão, mas recua.
+
+      Elfo Líder: 'Tudo bem, tudo bem. Guardamos a diversão para depois. O novo amigo do
+      Urrgos não tem senso de humor.'
+
+      Eles se dispersam, lançando olhares sujos, mas Urrgos está a salvo por agora. Ele olha
+      para você com uma admiração profunda e silenciosa.
+      "
+  opcoes:
+    - texto: 
+      proximo:
+
+acalmar_urggos:
+  texto:
+      "
+      Você se aproxima calmamente, ignorando os elfos, e fala diretamente com Urrgos.
+
+      'Ignora eles, Urrgos. Eles são como moscas. Você não debate com mosca, apenas
+      a espanta. Fique comigo.'
+
+      Urrgos para de se debater. Sua expressão de raiva se transforma em confusão e depois
+      em um lampejo de compreensão. Os elfos, sem graça, param com as provocações.
+
+      Urrgos: 'Urrgos... entender. Ficar com você. Ser como você.'
+      "
+  opcoes:
+    - texto: 
+      proximo:
+
+ignorar_observar:
+  texto:
+      "
+      Você cruza os braços e decide não se envolver. É melhor não chamar atenção.
+
+      Os supervisores chegam com seus chicotes, dispersando a todos com ameaças. Nos
+      dias seguintes, a cena se repete. As provocações dos elfos ficam cada vez mais cruéis.
+      Urrgos, sem um modelo para seguir, fica mais frustrado.
+
+      No terceiro dia, um grito gutural corta o ar. Urrgos, em fúria assassina, esmaga o crânio
+      de dois elfos antes que os guardas apareçam. Uma chuva de flechas e lanças o abate
+      enquanto ele rugia de dor e raiva. Descontrolado ele começa a destruir tudo em sua
+      volta, agora se parecendo muito mais com uma fera do deserto ele aniquila todos em
+      seu caminho e para seu azar você era um de que estava e é esmagado pelos punhos de
+      Urrgos. Após diversas mortes o guardas matam Urrgos, contudo sem atendimentos
+      médicos descentes e pelo trabalho forçado mesmo com tais machucados, você morre
+      por conta de uma infecção.
+      "
+  opcoes:
+    - texto: 
+      proximo:
+
+# Ódio no Pátio das Senzalas
+odio_patio_senzalas:
+  texto:
+      "
+      Com os dedos, você raspa o final do seu mingau oleoso e com cara de lama. De
+      repente, uma enxurrada de cobertores imundos cobre você, pontuada por insultos
+      mordazes. Quase imediatamente, um par de corpos acerta o seu pequeno grupo.
+
+      Os corpos pertencem a Lissan e Kania, duas gladiadoras enviadas às senzalas como
+      punição. A luta é mortal desde o início. Lissan, defensiva, bloqueia os golpes com seu
+      bordão, enquanto Kania ataca com fúria usando uma bola de espinhos. Através dos
+      gritos, fica claro que brigam por um homem chamado Tachandral. Kania odeia Lissan
+      porque esta foi escolhida para ser a parceira de luta de Tachandral.
+
+      Lissan tenta explicar, perdendo chances de atacar sério, mas Kania só quer sangue.
+      Em um movimento brutal, Kania nocauteia Lissan e pula em suas costas, enrolando a
+      corda de sua arma no pescoço da rival e começando a estrangulá-la. Os guardas não
+      intervêm, apenas apostam no resultado.
+
+      Diálogo:
+      Kania:'Sou mais forte, mais rápida e mais durona que você! Eu devia ser a
+      parceira dele!'
+
+      Lissan: (Engasgando) 'O treinador me escolheu porque nossas habilidades se
+      complementam!'
+
+      Kania:'Quando você estiver morta, eu lutarei do lado de Tachandra!'
+      Lissan está morrendo. O que você faz?
+
+      Opções: 
+      1. Intervenção Pacífica:
+      Tente separar as duas e acalmar Kania, argumentando que matar Lissan só a afastará
+      de Tachandral para sempre, tornando-a uma assassina aos olhos dele.
+      
+      2. Ação Direta:
+      Aja rápido! Isso passa em sua mente, então para separar as duas à força você se
+      intromete, puxando Kania para longe de Lissan antes que seja tarde demais.
+      
+      3. Não se Envolver:
+      Esta não é sua briga. Gladiadoras são problemas que se resolvem sozinhos. Deixe que
+      o destino decida
+      "
+  opcoes:
+    - texto: "Intervenção Pacífica"
+      proximo: "internvencao_pacifica"
+    - texto: "Ação Direta"
+      proximo: "acao_direta"
+    - texto: "Não se Envolver"
+      proximo: "nao_se_envolver"
+
+intervir:
+  texto:
+    "
+    Você se aproxima com as mãos abertas, sua voz é calma, mas firme, dirigindo-se a
+    Kania.
+
+    'Matá-la só vai manchar seu nome, Kania! Tachandral nunca olhará para uma
+    assassina. Isso é o oposto de ganhar seu respeito!'
+
+    Kania nem sequer olha para você. Seus olhos, vidrados em ódio, permanecem fixos em
+    Lissan. Sua voz sai como um rosnado baixo e distorcido.
+
+    Kania:'Respeito? Eu quero é o LUGAR DELA!'
+
+    Ignorando completamente seus argumentos, ela dá um puxão final e brutal na corda.
+    Um estalido seco e horrível ecoa no pátio. O corpo de Lissan vai imediatamente ao
+    relaxamento da morte.
+
+    Antes que qualquer um possa reagir, Kania se levanta, com a fúria agora redirecionada
+    e ampliada pela interrupção. Ela desembainha uma adaga curta que estava em sua
+    cintura.
+
+    Kania:'Vocês queriam salvá-la? Então podem acompanhá-la!'
+
+    Ela avança sobre o grupo num frenesi assassino, atacando cegamente. Os guardas, em
+    vez de intervir, recuam e começam a fazer novas apostas, gritando: 'A louca vai limpar
+    a senzala para nós! Apostem em quantos ela leva!'
+
+    Com a negligência dos guardas e o armamento de Kania, não oferecem chance contra
+    alguém totalmente treinado a matar os outros.
+
+    A bondade é algo formidável e raro em Athas, mas sem força isso apenas se torna uma
+    ato de covardia.
+    "
+  opcoes:
+    - texto: 
+      proximo:
+
+acao_direta:
+  texto:
+      "
+    Ação Direta
+    Sem hesitar, você avança. Enquanto um companheiro distrai Kania, você a agarra
+    pelos ombros e a arranca de cima de Lissan com força. As duas rolam para longe no
+    chão de terra.
+
+    Kania solta um urro de raiva pura ao ser interrompida. Ela se levanta rapidamente,
+    agora com a bola de espinhos girando em sua direção.
+
+    Kania:'Você vai morrer no lugar dela, verme!'
+
+    Uma luta rápida e brutal se inicia. Kania é uma oponente formidável, mas agir em grupo
+    dá a vocês a vantagem. Após alguns golpes trocados, os guardas, vendo que a briga
+    saiu do controle, finalmente intervêm com chicotes, separando todos.
+
+    Lissan agradece e diz que irá retribuir o favor de salvá-la.
+    "
+  opcoes:
+    - texto: 
+      proximo:
+
+nao_se_envolver:
+  texto:
+      "
+      Você troca um olhar com seus companheiros e todos concordam silenciosamente:
+      não vale o risco. Vocês se afastam, virando as costas para a cena.
+
+      Os sons de luta cessam, substituídos por um silêncio súbito e sinistro. Quando você
+      olha para trás, Kania está de pé, ofegante, o corpo inerte de Lissan a seus pés. Ela
+      desenrola a corda do pescoço da rival com um chute de desdém.
+
+      Os guardas riem e trocam moedas. Kania cospe no chão e caminha para longe, seu
+      ódio momentaneamente saciado. Lissan é apenas mais um corpo a ser arrastado pela
+      equipe de limpeza ao anoitecer.
+      "
+  opcoes:
+    - texto: 
+      proximo:
+
+# A Proposta nas Sombras
+
+proposta_nas_sombras:
