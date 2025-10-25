@@ -36,7 +36,7 @@ class ClienteApp:
     # ========================
     def conectar_servidor(self):
         try:
-            self.conn = rpyc.connect("IP_VPS", 18812)
+            self.conn = rpyc.connect("localhost", 18812)
             self.servico = self.conn.root
             print("[Cliente] Conectado ao servidor RPyC.")
         except Exception as e:

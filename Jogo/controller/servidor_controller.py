@@ -1,7 +1,7 @@
 # service/servidor_controller.py
+import logging
 import os
 import rpyc
-import logging
 from model.motor_jogo import MotorJogo  # importa o motor do jogo
 
 # === Configuração de Logs ===
@@ -86,12 +86,33 @@ class JogoService(rpyc.Service):
             return f"Erro ao registrar voto: {e}"
 
     def exposed_confirmar_continuar(self, nome_jogador):
-        resposta = motor_global.registrar_pronto(nome_jogador)
-        if resposta["avancar"]:
-            return {"acao": "avancar", "mensagem": resposta["mensagem"], "trecho": motor_global.obter_trecho_atual()}
-        else:
-            return {"acao": "aguardando", "mensagem": resposta["mensagem"]}
+        """Recebe o clique de 'Continuar' do cliente e coordena o avanço do jogo."""
+        try:
+            log.info(f"🕹️ Jogador '{nome_jogador}' clicou em 'Continuar'.")
+            resposta = motor_global.registrar_pronto(nome_jogador)
 
+            if resposta["avancar"]:
+                log.info(f"✅ Todos confirmaram — avançando trecho. ({nome_jogador} foi o último a confirmar)")
+                trecho_atual = motor_global.obter_trecho_atual()
+                log.debug(f"➡️ Trecho atual após avanço: {trecho_atual}")
+                return {
+                    "acao": "avancar",
+                    "mensagem": resposta["mensagem"],
+                    "trecho": trecho_atual
+                }
+            else:
+                log.debug(
+                    f"⏳ Jogador '{nome_jogador}' confirmou. "
+                    f"Aguardando outros — mensagem: {resposta['mensagem']}"
+                )
+                return {
+                    "acao": "aguardando",
+                    "mensagem": resposta["mensagem"]
+                }
+
+        except Exception as e:
+            log.error(f"❌ Erro ao confirmar 'Continuar' para jogador '{nome_jogador}': {e}")
+            return {"acao": "erro", "mensagem": f"Erro ao continuar: {e}"}
 
     def exposed_obter_status_votacao(self):
         """Permite que os clientes consultem o status da votação."""
