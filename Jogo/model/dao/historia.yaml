@@ -1,5 +1,5 @@
 introducao:
-  texto: "
+  texto: |
         Introdução
         O que é ATHAS?
         'Eu vivo em um mundo de fogo e areia. O sol carmesim queima a vida de qualquer
@@ -84,12 +84,12 @@ introducao:
         ou talvez o toque da feitiçaria ancestral tenha envenenado as fontes da vida e infligido
         monstro após monstro ao mundo moribundo. De qualquer forma, os desertos são
         perigosos, e apenas um tolo ou um lunático viaja por eles sozinho.
-        "
+
   proximo: "inicio_historia"
 
 inicio_historia:
-  texto: 
-    "O dia chegou a seu momento mais quente, quando apenas os mais desesperados mercadores mantêm suas lojas abertas. 
+  texto: |
+    O dia chegou a seu momento mais quente, quando apenas os mais desesperados mercadores mantêm suas lojas abertas. 
     As ruas permanecem desertas, a não ser por alguns pobres pedintes que não têm outro lugar para ficar.
 
     Um par de elfos, Prithen e Nandlex, de aparência desordeira, entra no centro comercial. 
@@ -118,29 +118,25 @@ inicio_historia:
     Você não fala. Em vez disso, avança rapidamente, empurrando o elfo mais próximo com força brutal 
     contra a parede e colocando-se entre os agressores e o mendigo. Sua postura é de luta, suas mãos prontas para empunhar uma arma ou lutar.
 
-    3. O Chamado à Razão
+    3. Persoadi-los
     Vocês realmente querem manchar suas linhagens com o sangue de um mendigo? A morte dele não trará honra, só trará o 
     interesse indesejado dos Templários. Caminheme esqueçam esta insignificância.
-    "
+
   opcoes:
     - texto: "Ignorancia é uma virtude"
       proximo: "ingnorancia_e_uma_virtude"
     - texto: "Ação Direta e Silenciosa"
       proximo: "acao_direta_e_silenciosa"
-    - texto: "O Chamado à Razão"
-      proximo: "chamado_razao"
+    - texto: "Persoadi-los"
+      proximo: "persoadir"
 
 ingnorancia_e_uma_virtude:
   texto: "Vocês seguem em frente, sem nenhum empecilho."
-  opcoes:
-    - texto: 
-      proximo: 
-    - texto: 
-      proximo: 
+  proximo: "ofensiva_seria"
 
 acao_direta_e_silenciosa:
-  texto: 
-      "Sem uma palavra, você se torna um redemoinho de ação. Seu ombro atinge Nandlex 
+  texto: |
+      Sem uma palavra, você se torna um redemoinho de ação. Seu ombro atinge Nandlex 
       com força total, arremessando-o contra a parede de pedra com um baque surdo. Você 
       gira, assumindo uma postura de combate, seus olhos prometendo violência.
 
@@ -152,15 +148,11 @@ acao_direta_e_silenciosa:
       surra. Orman está salvo por agora, mas a luta de verdade está prestes a começar. 
       Mesmo com os Elfos perdendo, mais e mais deles começam a aparecer. Enfim todos 
       vocês são derrotados e templários em busca de mendigos para escravizar, acham 
-      todos vocês que são levados até a senzala."
-  opcoes:
-    - texto: 
-      proximo: 
-    - texto: 
-      proximo: 
+      todos vocês que são levados até a senzala.
+  proximo: "senzala"
 
-chamado_razao:
-  texto: "
+persoadir:
+  texto: |
       Você fala com uma calma gelada, tentando alcançar um fio de racionalidade neles.
 
       Vocês realmente querem manchar suas linhagens com o sangue de um mendigo? A morte dele não trará honra, 
@@ -176,15 +168,12 @@ chamado_razao:
 
       Mesmo com os Elfos perdendo, mais e mais deles começam a aparecer. Enfim todos vocês são derrotados e 
       templários em busca de mendigos para escravizar, acham todos vocês que são levados até a senzala.  
-    "
-  opcoes:
-    - texto: 
-      proximo:
+
+  proximo: "ofensiva_seria"
 
 
 ofensiva_seria:
-  texto: 
-      "
+  texto: |
       O céu vermelho sobre Tyr é mesclado com a fuligem de fogos de cozinha; o odor forte
       de temperos exóticos ainda paira no ar. Um fraco calor radia das paredes de pedra e as
       pessoas se apressam fervorosamente pelas ruas. Conforme vocês viram a esquina,
@@ -220,18 +209,18 @@ ofensiva_seria:
       empurrou. Sua mão repousa no cabo de sua arma. Para o vendedor, com voz baixa e
       perigosa): Você realmente quer transformar um acidente em um problema para a sua
       saúde?
-      "
+
   opcoes:
-    - texto: "acusacao_rapida"
+    - texto: "A Acusação Rápida"
       proximo: "acusacao_rapida"
-    - texto: "compensacao_imediata"
+    - texto: "A Compensação Imediata"
       proximo: "compensacao_imediata"
-    - texto: "intimidacao_silenciosa"
+    - texto: "A Intimidação Silenciosa"
       proximo: "intimidacao_silenciosa"
 
 acusacao_rapida:
   texto:
-      "
+      |
       Você aponta um dedo acusador na direção do gladiador e, por extensão, do Senador
       Verrasi. Sua voz ecoa na rua, atraindo a atenção de todos os curiosos.
 
@@ -253,15 +242,11 @@ acusacao_rapida:
       templo. O caso está encerrado.
 
       Vocês se safam, contudo o nobre parece que marca os seus rostos.
-      "
 
-  opcoes:
-    - texto: 
-      proximo:
+  proximo: "refugio_perigoso_estalagem"
 
 compensacao_imediata:
-  texto:
-      "
+  texto: |
       Você ignora o nobre e se ajoelha, começando a recolher algumas frutas intactas. Sua
       voz é calma e prática ao se dirigir ao vendedor.
       
@@ -280,14 +265,11 @@ compensacao_imediata:
       Ele e seus gladiadores seguem caminho, sem olhar para trás. Os Templários, sem conflito para resolver, se dispersam.
 
       Vocês gastam todo o dinheiro por frutas que nem mesmo consumiram.
-      "
-  opcoes:
-    - texto: 
-      proximo:
+
+  proximo: "refugio_perigoso_estalagem"
 
 intimidacao_silenciosa:
-  texto:
-      "
+  texto: |
       Você se levanta com uma lentidão calculada. Seus olhos se fixam no gladiador que os
       empurrou, e sua mão repousa sobre o cabo de sua arma. Sua voz sai como um sussurro gelado
       dirigido ao vendedor:
@@ -306,15 +288,12 @@ intimidacao_silenciosa:
 
       O Senador Verrasi sorri, divertido. “Parece que o lixo quer lutar. Malk, divirta-se.”
       No fim, Malk os derrota com seu poder avassalador.
-      "
-  opcoes:
-    - texto: 
-      proximo:
+
+  proximo: "senzala"
 
 
 refugio_perigoso_estalagem:
-  texto:
-      "
+  texto: |
         O ar frio nos pulmões e o vinho doce nos lábios acalmam a tensão do dia. 
         Por toda parte, o tilintar animado de canecas e a algazarra de conversas enchem 
         o ar, e o rico aroma de carne grelhada anuncia a refeição que se aproxima. 
@@ -360,7 +339,6 @@ refugio_perigoso_estalagem:
         Entregá-la
         Você se levanta e aponta para Mahlanda. 'Ela está aqui! Ela é a Preservadora!' 
         (Você tenta entregá-la para salvar sua própria pele.)
-      "
   opcoes:
     - texto: "A Farsa"
       proximo: "farsa"
@@ -369,31 +347,26 @@ refugio_perigoso_estalagem:
     - texto: "Entregar-la"
       proximo: "entregar_la"
 
+
 farsa:
-  texto:
-      farsa:
-        texto:
-          "
-          Você entrega sua fala com um sorriso caloroso. Por um instante, parece funcionar.
-          Mahlanda solta um suspiro de alívio. No entanto, o Templário Mundar não se afasta.
-          Ele se aproxima lentamente, seus olhos frios analisando cada rosto na mesa.
+    texto: |
+      Você entrega sua fala com um sorriso caloroso. Por um instante, parece funcionar.
+      Mahlanda solta um suspiro de alívio. No entanto, o Templário Mundar não se afasta.
+      Ele se aproxima lentamente, seus olhos frios analisando cada rosto na mesa.
+      Templário Mundar: 'Sua 'família'...', ele diz com um tom cortante. '...é muito diversa.
+      Um elfo, um humano do norte, um meio-gigante... e uma 'prima' de Muls. Curioso.' Ele
+      para atrás da sua cadeira. 'Você mente. E no reino do Rei Kalak, mentir para um
+      Templário é tão grave quanto abrigar um Preservador. Algemem todos! São todos
+      cúmplices!'
 
-          Templário Mundar: 'Sua 'família'...', ele diz com um tom cortante. '...é muito diversa.
-          Um elfo, um humano do norte, um meio-gigante... e uma 'prima' de Muls. Curioso.' Ele
-          para atrás da sua cadeira. 'Você mente. E no reino do Rei Kalak, mentir para um
-          Templário é tão grave quanto abrigar um Preservador. Algemem todos! São todos
-          cúmplices!'
+      Os guardas avançam. Qualquer tentativa de luta é rapidamente sufocada pelo número
+      esmagador. Vocês são todos algemados
+    proximo: "senzala"
 
-          Os guardas avançam. Qualquer tentativa de luta é rapidamente sufocada pelo número
-          esmagador. Vocês são todos algemados
-          "
-  opcoes:
-    - texto: 
-      proximo:
 
 silencio_culpado:
   texto:
-      "
+      |
       Seu silêncio é ensurdecedor. Mahlanda pisca, confusa e então desesperada, enquanto
       percebe que não terá ajuda. Os clientes ao redor, temendo serem associados ao
       silêncio cúmplice, começam a apontar discretamente e a se afastar de sua mesa.
@@ -405,14 +378,12 @@ silencio_culpado:
       ativa.'
 
       Não há como lutar. As algemas são colocadas. Vocês são arrastados para fora.
-      "
-  opcoes:
-    - texto: 
-      proximo:
+
+  proximo: "senzala"
 
 entregar_la:
   texto:
-      "
+      |
       Você se levanta e aponta para Mahlanda. 'Ela está aqui! Ela é a Preservadora!
       Cumpram a palavra do Rei Kalak!'
 
@@ -428,15 +399,13 @@ entregar_la:
 
       Antes que você possa protestar, os guardas o agarram. Seus companheiros de grupo
       olham para você com desprezo. O traidor foi traído pela própria natureza.
-      "
-  opcoes:
-    - texto: 
-      proximo:
+
+  proximo: "senzala"
 
 
 senzala:
   texto:
-      "
+      |
       Introdução:
 
       A liberdade é uma memória distante, apagada pelo calor implacável do sol de Tyr. O
@@ -458,12 +427,12 @@ senzala:
       prêmio por ter sobrevivido mais um dia, antes que você caia no sono, ao relento,
       sabendo que o amanhecer trará a mesma provação. A única certeza é que o Zigurate
       deve crescer, não importa quantos de vocês sejam consumidos por ele.
-      "
+
   proximo: "provocacao_canteiro_obras"
 
 provocacao_canteiro_obras:
   texto:
-      "
+      |
       Um estranho estrondo se levanta sobre os guinchos dos supervisores e tu levantas a
       tua fronte queimada de sol para ver o distúrbio. Uma multidão de escravos
       rapidamente se reúne ao redor do som, se acotovelando. Conforme tu dobras o teu
@@ -507,7 +476,6 @@ provocacao_canteiro_obras:
       Mantenha-se afastado e apenas observe o desenrolar da situação. Não é seu
       problema.
 
-      "
   opcoes:
     - texto: "Intromerter-se"
       proximo: "intrometer_se"
@@ -518,7 +486,7 @@ provocacao_canteiro_obras:
 
 intrometer_se:
   texto:
-      "
+      |
       Você avança com passo firme, colocando-se diante do elfo mais provocador. Seu olhar
       é uma promessa de violência.
 
@@ -532,14 +500,12 @@ intrometer_se:
 
       Eles se dispersam, lançando olhares sujos, mas Urrgos está a salvo por agora. Ele olha
       para você com uma admiração profunda e silenciosa.
-      "
-  opcoes:
-    - texto: 
-      proximo:
+
+  proximo: "odio_patio_senzalas"
 
 acalmar_urggos:
   texto:
-      "
+      |
       Você se aproxima calmamente, ignorando os elfos, e fala diretamente com Urrgos.
 
       'Ignora eles, Urrgos. Eles são como moscas. Você não debate com mosca, apenas
@@ -549,10 +515,8 @@ acalmar_urggos:
       em um lampejo de compreensão. Os elfos, sem graça, param com as provocações.
 
       Urrgos: 'Urrgos... entender. Ficar com você. Ser como você.'
-      "
-  opcoes:
-    - texto: 
-      proximo:
+
+  proximo: "odio_patio_senzalas"
 
 ignorar_observar:
   texto:
@@ -573,13 +537,12 @@ ignorar_observar:
       por conta de uma infecção.
       "
   opcoes:
-    - texto: 
+    - texto: Final da historia
       proximo:
 
 # Ódio no Pátio das Senzalas
 odio_patio_senzalas:
-  texto:
-      "
+  texto: |
       Com os dedos, você raspa o final do seu mingau oleoso e com cara de lama. De
       repente, uma enxurrada de cobertores imundos cobre você, pontuada por insultos
       mordazes. Quase imediatamente, um par de corpos acerta o seu pequeno grupo.
@@ -627,8 +590,7 @@ odio_patio_senzalas:
       proximo: "nao_se_envolver"
 
 intervir:
-  texto:
-    "
+  texto: |
     Você se aproxima com as mãos abertas, sua voz é calma, mas firme, dirigindo-se a
     Kania.
 
@@ -659,14 +621,16 @@ intervir:
 
     A bondade é algo formidável e raro em Athas, mas sem força isso apenas se torna uma
     ato de covardia.
-    "
   opcoes:
-    - texto: 
+    - texto: |
+        A bondade é algo formidável e raro em Athas, mas sem força isso apenas se torna uma
+        ato de covardia.
+        
+        Fim da historia.
       proximo:
 
 acao_direta:
-  texto:
-      "
+  texto: |
     Ação Direta
     Sem hesitar, você avança. Enquanto um companheiro distrai Kania, você a agarra
     pelos ombros e a arranca de cima de Lissan com força. As duas rolam para longe no
@@ -682,10 +646,8 @@ acao_direta:
     saiu do controle, finalmente intervêm com chicotes, separando todos.
 
     Lissan agradece e diz que irá retribuir o favor de salvá-la.
-    "
-  opcoes:
-    - texto: 
-      proximo:
+
+  proximo: "proposta_nas_sombras"
 
 nao_se_envolver:
   texto:
@@ -701,10 +663,618 @@ nao_se_envolver:
       ódio momentaneamente saciado. Lissan é apenas mais um corpo a ser arrastado pela
       equipe de limpeza ao anoitecer.
       "
-  opcoes:
-    - texto: 
-      proximo:
+  proximo: "proposta_nas_sombras"
 
 # A Proposta nas Sombras
 
 proposta_nas_sombras:
+  texto: |
+    Hoje, os supervisores vos fazem trabalharem particularmente muito. Conforme tu te
+    esforças sob cargas pesadas, uma se move como se com um propósito vingativo e cai
+    no chão. Xingando, teu supervisor vem com o chicote.
+    
+    O supervisor os chicoteia, causando dor e frustração no grupo. Enquanto isto ocorre,
+    dois guardas meio-gigantes se aproximam silenciosamente e o separam do resto do
+    grupo e o levam à força.
+    
+    Sem uma palavra de explicação, os meio-gigantes marcham até a cabana de um
+    supervisor e te empurram pra dentro. Um óleo rançoso queima numa lamparina,
+    iluminando parcialmente um templário com manto negro, sua face oculta na
+    escuridão. Sem uma palavra de introdução, ele começa, sua voz um sussurro grave e
+    calculista:
+    
+    Templário: “Eu poderia ter te chicoteado, até matado, pela tua burrada! Tua morte
+    pode ensinar os outros uma lição! Talvez tu saibas de uma razão para eu não te matar.”
+    Ele pausa, obviamente esperando uma resposta. A ameaça é clara, mas ele não está
+    dizendo o que quer. Ele quer que você se comprometa com uma proposta que ele
+    mesmo se recusa a nomear.
+    
+    Opções:  
+    1. Submissão Estratégica:
+    "Um homem sábio não desperdiça um recurso. Minha vida é um recurso. Estou numa
+    posição para ouvir coisas... e estou disposto a ouvi-las para você, se isso me mantiver
+    útil e vivo."
+    
+    2. Negociar ousadamente:
+    "Matar-me ensina uma lição. Mas um escravo vivo e leal dentro dos seus próprios
+    esquemas... isso ensina uma lição muito mais poderosa aos seus verdadeiros
+    inimigos. Eu posso ser mais do que apenas ouvidos, posso ser uma isca, uma cortina
+    de fumaça. Me use para pegar os peixes grandes, não os pequenos."
+    
+    3. Silêncio:
+    Você fica em silêncio por um longo momento, olhando fixamente para onde acredita
+    serem os olhos do templário. Então, com uma voz surpreendentemente estável, diz:
+    "Qualquer razão que eu desse, o senhor já saberia que foi inventada para poupar minha
+    vida. A única razão pela qual estou aqui é porque o senhor já decidiu que eu tenho um
+    uso. Cabe a mim descobrir qual é, e cumpri-lo para sobreviver.
+  opcoes:
+    - texto : "Submissão Estratégica"
+      proximo: "resultado_proposta"
+    - texto: "Negociar ousadamente"
+      proximo: "resultado_proposta"
+    - texto: "Silêncio"
+      proximo: "resultado_proposta"
+
+resultado_proposta:
+  texto: |
+    Independente da escolha, o Templário não ordena a punição imediata. Ele vê valor em
+    seu recruta potencial.
+    
+    O Templário: (Faz um som baixo, quase um riso) "Astuto. Bom. A estupidez não tem
+    valor aqui." Ele desliza um cantil extra através da mesa. "Tua ração de água. Um sinal
+    de boa fé. Os meio-gigantes que te trouxeram... eles são teus contatos. Sussurre para
+    eles o que quer que tuas orelhas captarem. Falhas em reportar... serão vistas como
+    traição. E lembra," ele adiciona, sua voz caindo para um sussurro gelado, "o escravo
+    que foi chicoteado até a morte ontem? Incrível o que um comentário rude pode
+    fazer."
+    
+    Você é levado de volta ao grupo, ileso fisicamente, mas carregando um segredo
+    perigosíssimo e um compromisso que definirá o futuro de todos na senzala. A próxima
+    vez que ele vir os meio-gigantes, será a hora de decidir o que fazer com essa aliança
+    forjada nas sombras.
+  proximo: "sussuro_na_escuridao"
+
+
+sussuro_na_escuridao:
+  texto: |
+    Os ventos noturnos prometem temperaturas baixíssimas. Escravos se amontoam
+    em grupos ou se enrolam firmemente em cobertores finíssimos. Além do teu grupo
+    de escravos, tu observas uma figura sombria que, ao invés de se aconchegar por
+    calor, furtivamente escolhe seu caminho entre formas dormentes.
+    
+    Uma figura, Cruerex, move-se com um propósito suspeito na escuridão. E tu a segues.
+    Para chegar perto o suficiente para ouvir a conversa de Cruerex com o guarda, você
+    deve ser mais silencioso que o vento.
+    
+    Cruerex: “Eu te disse, eu não sei o plano deles. Apenas diga a Theindar que os
+    escravos têm um grande plano! Talvez com a ajuda das gladiadoras. Se ele quer que eu
+    descubra o líder, me avise.”
+    
+    O informante se prepara para ir embora. Agora, você deve sair sem ser detectado.
+    Se você foi detectado ou se decide sair das sombras e confrontar Cruerex, a situação
+    muda drasticamente.
+    
+    Cruerex se assusta, mas rapidamente sua expressão se torna fria e calculista.
+    Cruerex: "Espera. Não precisa acabar mal para você. Mantenha a boca calada e as
+    coisas irão melhorar bastante pra tu."
+    
+    Ele então faz uma proposta concreta.
+    
+    Opções:
+    1. Aceitar o Acordo
+    Você concorda em não expô-lo. Em troca, ele promete trabalho mais fácil, comida
+    melhor e água adequada através de seus contatos.
+    
+    2. Chantagem Audaciosa
+    Você olha firme para ele e sussurra: "Por que eu me calaria por migalhas? Se você tem
+    acesso a favores dos guardas, então nos dois merecemos um lugar melhor. Arranje
+    benefícios reais para mim também, ou seu segredo se torna de todos amanhã."
+    
+    3. Rejeitar e Ameaçar
+    Você se recusa com desprezo e ameaça gritar e expô-lo para todos os escravos ali
+    mesmo.
+  opcoes:
+    - texto: "1. Aceitar o Acordo"
+      proximo: "aceitar_acordo"
+    - texto: "2. Chantagem Audaciosa"
+      proximo: "chantagem_audaciosa"
+    - texto: "3. Rejeitar e Ameaçar"
+      proximo: "rejeitar_e_ameacar"
+
+aceitar_acordo:
+  texto: |
+    Cruerex sorri, um gesto estreito e sem calor. 
+    "Um homem esperto. Vai ver que a vida aqui pode ser... tolerável."
+  proximo: "guarda_costas"
+
+chantagem_audaciosa:
+  texto: |
+    Cruerex franze a testa, claramente não esperando essa ousadia. Ele ri baixo, um som
+    áspero.
+    
+    "Audacioso, hein? Gosto disso. Tudo bem. Vou ver o que posso fazer. Mas se você
+    achatar o pé... lembre-se que eu cheguei nos guardas primeiro."
+  proximo: "guarda_costas"
+
+rejeitar_e_ameacar:
+  texto: |
+    Seu desprezo é claro. Antes que você possa terminar sua ameaça, o rosto de Cruerex
+    se transforma em uma máscara de pânico e ódio.
+    
+    "Tolo! Você assinou sua sentença de morte!" Ele não foge. Em vez disso, ele dá um
+    passo para trás e grita para o guarda: "TRAIÇÃO! UM ESCRAVO ESTÁ TENTANDO ME
+    MATAR!"
+    
+    Espalhar o que você realmente pensa te levou a isso, espadas de ossos cravadas em
+    seu peito e seu sangue quente escorrendo para a areia fria da noite.
+  proximo: "fim"
+
+guarda_costas:
+  texto: |
+    O sol escaldante de Tyr castiga o local de trabalho. O dia inteiro, os supervisores
+    estiveram mais brutais que o normal. Sussurros correm entre os escravos: uma
+    inspeção real está para acontecer. Alguns dizem que o Rei Kalak trará a liberdade;
+    outros, que virá para esmagar uma rebelião.
+
+    De repente, um silêncio pesado cai sobre a multidão. Todos os olhos se voltam para o
+    topo do zigurate. Lá está ele: o Rei Kalak, em sua fragilidade aparente, cercado por
+    nobres vestidos com finas roupas.
+
+    Com um sorriso sinistro, o Rei ergue a mão. "Meus nobres estão zangados porque
+    tomei seus escravos. Deixem os escravos se divertirem!"
+
+    Para o horror de todos, ele agarra dois senadores e, com uma força sobrenatural, os
+    arremessa para o pátio de escravos. Eles caem como sacos de areia, atordoados, a
+    poucos metros de você. O choque paralisa a todos. Até que um grito gutural, carregado
+    de ódio, ecoa:
+
+    "Matem os dois!"
+
+    A multidão de escravos, antes estática, avança como uma maré furiosa, ferramentas de
+    trabalho erguidas como armas. Urrgos, o meio-gigante, agarra seu braço e grita,
+    desesperado: "Isto não está certo!" Os dois nobres aterrorizados — Ismar e Regle —
+    começam a gritar ofertas de ouro e prata por proteção.
+
+    De cima, Kalak observa a cena, roendo as unhas com um ar de divertida expectativa.
+
+    Opções:
+    1. Defender os nobres
+    Você se coloca na frente dos nobres, desviando dos primeiros golpes. Grita para
+    que outros escravos sensatos se juntem a você. A luta é inevitável, mas o foco
+    da turba são os senadores.
+
+    2. Motim
+    Você concorda com a multidão. Estes nobres representam a opressão que te
+    condenou a esta vida. Você se junta ao ataque, canalizando toda a sua raiva e
+    frustração. Urrgos olha para você com traição e horror, mas a sua lealdade agora é
+    com a revolta.
+
+    3. Fugir em meio à confusão
+    Você não está aqui para ser um herói ou um mártir. Esta é uma chance de caos,
+    uma oportunidade. Enquanto a atenção de todos está voltada para o linchamento,
+    você puxa Urrgos e some entre as sombras das arquibancadas, longe do centro
+    do conflito.
+  opcoes:
+    - texto: "1. Defender os nobres"
+      proximo: "defender_os_nobres"
+    - texto: "2. Motim"
+      proximo: "motim"
+    - texto: "3. Fugir em meio à confusão"
+      proximo: "fugir_em_meio_a_confusao"
+
+defender_os_nobres:
+  texto: |
+    Você e seus aliados conseguem repelir o ataque, e Kalak, do alto do zigurate,
+    bate palmas lentamente, divertido.
+
+    "Bravo! Que coragem!", ele exclama. Num ato de puro capricho, ordena a
+    execução dos dois nobres que você protegeu e, ironicamente, declara você e
+    Urrgos os novos nobres no lugar deles. 
+
+    Vocês são levados para a cidade, livres, vestindo as roupas e carregando os títulos
+    dos mortos. Urrgos, desconfortável com a ironia cruel do destino, murmura:
+    "Ser nobre... parece castigo." 
+
+    Vocês aproveitam a primeira oportunidade e fogem da tirania de Kalak e de sua cidade.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "jogos_proximos"
+
+motim:
+  texto: |
+    Os nobres são rapidamente despedaçados pela turba. Kalak, de cima, solta uma
+    risada baixa e se vira, perdendo o interesse agora que o espetáculo acabou.
+    Não há recompensa, apenas a satisfação sombria da vingança.
+
+    No entanto, você agora marcou a si mesmo como um rebelde perigoso, e os olhares
+    dos supervisores no dia seguinte serão muito mais atentos e cruéis.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "campeoes_da_causa"
+
+fugir_em_meio_a_confusao:
+  texto: |
+    Você evita o combate direto. De longe, ouve os gritos finais dos nobres e os urros da
+    multidão. Kalak não nota sua fuga. Você não ganha o favor do rei, mas também não
+    atrai a ira dos supervisores.
+
+    No entanto, você perde a oportunidade imediata de liberdade e deixa dois aliados
+    potenciais morrerem, o que pode fechar portas no futuro. Por outro lado, mantém-se
+    vivo e livre de suspeitas... por enquanto.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "campeoes_da_causa"
+
+campeoes_da_causa:
+  texto: |
+    Faz semanas desde que se encontram nas senzalas, suas ações levaram vocês
+    até aqui.
+
+    Este encontro ocorre à noite, após a refeição. Através de teus contatos, ouves que
+    Granj convocou uma reunião de emergência. Chegando à pequena fogueira, vês
+    preocupação nos olhos de Granj. Com estranha camaradagem, ele gesticula para
+    que te sentes.
+
+    As preocupações dele transparecem também nos semblantes da dúzia de escravos
+    reunidos: homens, mulheres, uma meio-elfa, um par de muls e um anão. Nenhum
+    parece feliz — vários se entreolham com desconfiança.
+
+    Quando Granj começa a reunião, o anão Hivash se levanta em desafio e começa a
+    discursar com voz furiosa, clamando por fuga imediata. Granj retruca, defendendo
+    paciência e planejamento. Cavasadleen, o mul, fala de morrer gloriosamente, e Niave,
+    o meio-elfo, declara que todos deveriam desistir e fugir por conta própria.
+
+    Por fim, Granj se volta a vocês:
+    "E vocês, recém-chegados? Para onde devemos direcionar nossa esperança?
+    Sua voz pode inclinar a balança nesta noite."
+    
+    Opções:
+    1. Apoiar Hivash — "HIVASH TEM RAZÃO - FUGA IMEDIATA!"
+    Todo dia aqui é uma sentença de morte! Se esperarmos, seremos apenas mais
+    corpos amanhã. Devemos agir AGORA!
+
+    2. Apoiar Cavasadleen — "MORRER GLORIOSAMENTE - ATAQUE DIRETO!"
+    Se a morte é certa, que nossa queda ecoe nas paredes deste zigurate! Sangue
+    por sangue!
+
+    3. Trair o grupo — "ENTREGAR A REBELIÃO AOS GUARDAS"
+    Esta rebelião é um suicídio! A única saída inteligente é ganhar o favor dos guardas.
+  opcoes:
+    - texto: "1. Apoiar Hivash — FUGA IMEDIATA"
+      proximo: "fuga_imediata"
+    - texto: "2. Apoiar Cavasadleen — ATAQUE DIRETO"
+      proximo: "ataque_direto"
+    - texto: "3. Trair o grupo — ENTREGAR A REBELIÃO AOS GUARDAS"
+      proximo: "entregar_rebeliao"
+
+fuga_imediata:
+  texto: |
+    A fuga noturna é um caos total. Os guardas, alertados pelo barulho, capturam a
+    maioria dos fugitivos. Hivash e três outros são publicamente executados ao amanhecer.
+
+    Seu grupo sobrevive, mas agora está marcado como instigador — a vigilância sobre
+    vocês triplica e todos os privilégios são revogados.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "proclamacao"
+
+ataque_direto:
+  texto: |
+    O ataque desesperado aos guardas é um massacre previsível. Cavasadleen e todos
+    os que o acompanham são eliminados em minutos. Seu grupo, na vanguarda do
+    ataque, é cercado e executado sem piedade.
+
+    A rebelião é esmagada completamente. Nenhum escravo ousa falar em resistência
+    novamente por muitos dias.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "proclamacao"
+
+entregar_rebeliao:
+  texto: |
+    Vocês alertam os guardas sobre a reunião. Na madrugada, os líderes rebeldes são
+    capturados e executados. Como recompensa, seu grupo recebe ração extra e
+    tarefas mais leves por uma semana.
+
+    Porém, são marcados como traidores por todos os escravos — isolados, vigiados
+    tanto por guardas quanto por companheiros, e odiados por todos. Qualquer
+    esperança de aliados futuros morre nesta noite.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "proclamacao"
+
+proclamacao:
+  texto: |
+    O ar nas senzalas está carregado de uma eletricidade perigosa. O zigurate,
+    agora uma silhueta imponente contra o céu vermelho de Tyr, está a meros dias de
+    ser concluído. Com essa proximidade chega uma tempestade de rumores que varre
+    o pátio de escravos como um vento do deserto.
+
+    Sussurros de "liberdade" e "grandes jogos" se chocam com histórias sombrias
+    sobre covas coletivas e o temido Dragão de Athas. Os supervisores, pressionados
+    por prazos impossíveis, tornam-se ainda mais brutais, enquanto os templários
+    observam tudo com uma indiferença que é, em si mesma, aterradora.
+
+    Em cada canto, grupos de escravos se reúnem, seus olhos brilhando com uma
+    mistura tóxica de esperança e medo. Eles sabem que algo monumental se
+    aproxima — um evento que pode significar libertação ou aniquilação.
+
+    Naquela noite, antes da refeição, o templário chefe aparece na senzala, acompanhado
+    de seus auxiliares. Guardas meio-gigantes circulam entre os escravos, gritando por
+    silêncio e batendo nos que desobedecem. Quando o tumulto cessa, o templário fala:
+
+    "O olho do Rei Kalak está sobre todos que o serviram neste magnífico trabalho,
+    tanto os vivos como os caídos. Lorde Kalak deseja recompensar aqueles que lhe
+    serviram tão bem."
+
+    Um murmúrio excitado se espalha entre os escravos. Sussurros de "Liberdade!"
+    e "Recompensa!" preenchem o ar. O templário levanta as mãos pedindo silêncio:
+
+    "Pelo decreto de Rei Kalak, hoje vocês recebem rações dobradas e amanhã vocês
+    comparecem aos grandes jogos. Ninguém será barrado destas recompensas —
+    um lugar será reservado até para os doentes e moribundos. Após os jogos, aqueles
+    que eram livres serão libertados e aqueles que eram escravos serão devolvidos a
+    seus mestres. Bom e generoso é Rei Kalak. Dêem obediência e louvem-no."
+
+    Os escravos ao redor se aquietam, atordoados. Então um rugido confuso passa
+    entre eles — mistura de gritos de alegria e uivos de desespero.
+
+    Diálogos dos escravos:
+    "Ele nos prometeu liberdade, não mais tortura!"
+    "Estamos salvos! Graças a Kalak!"
+    "Palavras vêm fácil. Acreditarei quando vir minha aldeia de novo."
+
+  opcoes:
+    - texto: "Continuar"
+      proximo: "jogos_proximos"
+
+jogos_proximos:
+  texto: |
+    Durante a suposta última noite de escravidão, a senzala está relativamente
+    silenciosa. A maioria dos prisioneiros perdeu o desespero de escapar, confiantes
+    de que sua condição melhorará no amanhecer. O vinho aguado amoleceu seus
+    sentidos e trouxe um sono leve aos poucos que ainda duvidam da promessa dos
+    templários.
+
+    Até mesmo os ex-radicais, que antes falavam em revolta, agora lambem suas
+    feridas quietamente. Afinal, acreditam que será mais fácil fugir de seus antigos
+    mestres do que de Kalak.
+
+    No entanto, a cidade de Tyr se prepara para o dia seguinte: o grande festival.
+    O zigurate está completo, e os templários correm para garantir que tudo
+    ocorra conforme o decreto do rei.
+
+    O rumor é claro — amanhã, os escravos serão levados aos “Grandes Jogos”,
+    que decidirão seu destino diante do próprio Kalak.
+
+    Na arena, o mestre de cerimônias Morvak observa os preparativos.
+    Ele pretende usar os novos gladiadores para entreter a multidão e testar
+    seus talentos. “Que sobrevivam os dignos”, ele murmura.
+
+    Na cidade, Kalak declarou feriado. Cidadãos de todas as castas lotam as
+    arquibancadas, ansiosos por sangue e espetáculo. Templários armados
+    patrulham cada corredor, atentos a qualquer sinal de desordem.
+
+    A noite termina em murmúrios e olhares inquietos. O amanhecer trará
+    a arena, o sangue e talvez... a liberdade.
+
+  opcoes:
+    - texto: "Continuar"
+      proximo: "jogos_comecam"
+
+jogos_comecam:
+  texto: |
+    O Mestre de Cerimônias aponta para três portões, cada um adornado com símbolos
+    distintos: um crânio com marcas de garras, uma corrente quebrada e uma teia prateada.
+
+    "Escolham seu destino, combatentes! Cada portal leva a uma provação única.
+    A Dança dos Espinhos testará sua agilidade e precisão.
+    O Poço do Gigante desafiará sua força e resistência.
+    A Teia do Devorador provará sua astúcia e coragem contra um predador natural.
+    A glória ou a morte os aguardam. Decidam-se!"
+
+    A multidão ruge, clamando por sangue e espetáculo. Os portões se abrem
+    lentamente, e o calor da arena se mistura ao cheiro metálico de sangue seco.
+
+    Qual caminho vocês escolhem?
+    
+    Opções:
+    1. A Dança dos Espinhos — enfrentar o Elfo das Areias.
+    2. O Poço do Gigante — enfrentar o Mul Gladiador.
+    3. A Teia do Devorador — enfrentar a Aranha-Lobo Gigante.
+  opcoes:
+    - texto: "1. A Dança dos Espinhos"
+      proximo: "danca_dos_espinhos"
+    - texto: "2. O Poço do Gigante"
+      proximo: "poco_do_gigante"
+    - texto: "3. A Teia do Devorador"
+      proximo: "teia_do_devorador"
+
+danca_dos_espinhos:
+  texto: |
+    A arena é um círculo de areia fina, cercado por ossos afiados que formam grades irregulares.
+    Seu oponente é um Elfo das Areias — ágil, impiedoso, armado com garras de osso.
+    Ele se move com graça felina, os olhos brilhando com prazer sádico.
+
+    Ele sorri, marcando o ritmo de uma dança de morte. O público grita, impaciente.
+    "Que abordagem devo seguir?", você pensa.
+    
+    Opções:
+    1. Tentar acompanhar o ritmo dele.
+    2. Avançar com tudo.
+    3. Defender-se até que ele se canse.
+  opcoes:
+    - texto: "1. Acompanhar o ritmo dele"
+      proximo: "danca_acompanhar"
+    - texto: "2. Avançar com tudo"
+      proximo: "danca_investida"
+    - texto: "3. Defender-se até cansá-lo"
+      proximo: "danca_defensiva"
+
+danca_acompanhar:
+  texto: |
+    Você desvia de seus ataques com elegância e aplica um golpe certeiro em seu pescoço.
+    O elfo cai silenciosamente. A plateia vibra, impressionada com sua habilidade.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "prologo_final"
+
+danca_investida:
+  texto: |
+    Você avança cegamente. O elfo se esquiva com facilidade, e suas garras de osso rasgam sua garganta.
+    O público vibra ao ver o sangue jorrar — uma morte rápida, mas brutal.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "prologo_final"
+
+danca_defensiva:
+  texto: |
+    Após longos minutos, o elfo comete um erro e você o golpeia. A vitória é sua, mas
+    você está coberto de cortes superficiais. A plateia vaiou, achando a luta covarde.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "prologo_final"
+
+poco_do_gigante:
+  texto: |
+    Você entra em uma cratera artificial de terra compactada. Seu oponente é um
+    Mul Gladiador — uma montanha de músculos armada com um mangual de pedra.
+    Ele avança rugindo, cada passo tremendo o chão da arena.
+
+    A força bruta domina, mas a astúcia pode ser sua vantagem.
+    
+    Opções:
+    1. Usar agilidade para ficar fora de seu alcance.
+    2. Enfrentar força com força.
+    3. Fingir fraqueza para enganá-lo.
+  opcoes:
+    - texto: "1. Usar agilidade"
+      proximo: "poco_agilidade"
+    - texto: "2. Enfrentar força com força"
+      proximo: "poco_forca"
+    - texto: "3. Fingir fraqueza"
+      proximo: "poco_enganar"
+
+poco_agilidade:
+  texto: |
+    Você se esquiva e o faz se cansar. Quando ele hesita, você atinge suas pernas e o derruba.
+    É uma vitória limpa e respeitada. O público aplaude seu controle.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "prologo_final"
+
+poco_forca:
+  texto: |
+    O mul investe e o mangual de pedra esmaga seu crânio. Sua morte é instantânea.
+    A plateia entra em frenesi, exaltando o espetáculo sangrento.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "prologo_final"
+
+poco_enganar:
+  texto: |
+    Você finge fraqueza e o Mul cai na armadilha. Um golpe rápido o derruba.
+    Vitória conquistada, mas o público o vaiou — considerou desonroso.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "prologo_final"
+
+teia_do_devorador:
+  texto: |
+    A arena é uma floresta petrificada, cheia de troncos de obsidiana e sombras densas.
+    Seu inimigo é uma Aranha-Lobo Gigante — silenciosa, venenosa, caçadora implacável.
+
+    A multidão silencia quando ela surge, os olhos brilhando como brasas no escuro.
+
+    Opções:
+    1. Subir em um dos troncos.
+    2. Provocá-la para atacar frontalmente.
+    3. Mover-se lentamente, camuflando-se.
+  opcoes:
+    - texto: "1. Subir em um tronco"
+      proximo: "teia_subir"
+    - texto: "2. Provocar ataque frontal"
+      proximo: "teia_provocar"
+    - texto: "3. Mover-se lentamente"
+      proximo: "teia_camuflar"
+
+teia_subir:
+  texto: |
+    Da altura, você domina o combate e perfura a criatura com um golpe certeiro.
+    Vitória limpa, e o público o aclama.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "prologo_final"
+
+teia_provocar:
+  texto: |
+    A investida da aranha é rápida demais. Seu ferrão injeta veneno, e você morre em agonia.
+    A plateia vibra com a brutalidade da cena.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "prologo_final"
+
+teia_camuflar:
+  texto: |
+    Você se move lentamente, camuflando-se entre as sombras. Quando a criatura
+    ataca, você a surpreende e a mata com precisão.
+    A luta é tão rápida que poucos percebem — a vitória é sua, mas o público
+    reage com silêncio frio.
+  opcoes:
+    - texto: "Continuar"
+      proximo: "prologo_final"
+
+prologo_final:
+  texto: |
+    O mundo contraiu-se até os limites ensanguentados da arena. De cima, do zigurate
+    que consumira milhares de vidas em sua construção, uma névoa púrpura e âmbar
+    descia — viva, sufocante, um véu que drenava a própria essência da vida.
+
+    Era o Eclipse de Tyr, a transformação final de Kalak, o rei-feiticeiro que devorava as
+    almas de seus súditos para ascender como deus. Cordões dourados de energia vital
+    eram arrancados dos corpos dos fracos, tecendo uma tapeçaria de agonia que subia
+    em direção à estrutura negra. Crianças e anciãos caíam primeiro, transformados em
+    cascas ressequidas que se desmanchavam ao toque. O ar tinha o gosto metálico do
+    medo e o cheiro adocicado da morte em massa.
+
+    No centro do pesadelo, um punhado de figuras lutava não pela glória, mas pelo direito
+    de continuar existindo. Eles eram cinco — manchas de determinação contra a maré
+    da destruição. Cada golpe era um desafio ao poder divino que os esmagava.
+
+    A névoa os envolvia, sugando sua força e esperança. Quando tudo parecia perdido,
+    uma lança foi arremessada — não com fúria, mas com desespero. Ela cortou o ar
+    denso, um raio de esperança contra a escuridão triunfante, mirando o coração de Kalak.
+
+    Por um instante, o tempo parou.
+
+    A lança, porém, foi detida no ar por um gesto desdenhoso do tirano. Ela caiu ao chão
+    com um som oco, rolando até o herói caído. Kalak riu. Não era triunfo — era o riso de
+    um deus brincando com formigas. O som ecoou pelas arquibancadas, mais doloroso
+    que o açoite, esmagando o espírito dos sobreviventes.
+
+    Mas a chama da vida é teimosa. O herói caído, exausto, estendeu a mão. Não havia
+    força em seu corpo — apenas memória, promessa e o último impulso de existir.
+
+    A lança se ergueu uma vez mais. Não foi arremessada pela carne, mas pela alma.
+
+    Kalak não desviou. Por que o faria? Era um deus diante de um inseto.
+
+    O som que se seguiu foi simples — um estalo úmido, quase silencioso. O riso cessou.
+    Os olhos de Kalak se arregalaram, não de dor, mas de espanto. A névoa vacilou,
+    depois se dissipou, como se o próprio ar suspirasse de alívio.
+
+    O corpo do tirano desintegrou-se em pó escuro, varrido pelo vento repentino.
+    O silêncio que se seguiu foi absoluto. Pela primeira vez em mil anos, Tyr respirava
+    livre.
+
+    Os cinco corpos jaziam na areia — um deles ainda segurando o vazio onde a lança
+    estivera.
+
+    O sol nasceu, fraco e pálido, mas livre da sombra do deus-rei.
+    A cidade também despertou. E, de alguma forma, Athas parecia menos morta.
+
+    Fim.
+  opcoes:
+    - texto: "Recomeçar a história"
+      proximo: "briga_elfica"
+
