@@ -2,7 +2,7 @@
 import logging
 import os
 import rpyc
-from model.motor_jogo import MotorJogo  # importa o motor do jogo
+from model.motor_jogo import MotorJogo
 
 # === Configuração de Logs ===
 os.makedirs("logs", exist_ok=True)  # garante que a pasta exista
@@ -20,19 +20,19 @@ logging.basicConfig(
 
 log = logging.getLogger("ServidorRPyC")
 
-# === Instância global do motor do jogo ===
+#instancia global do motor do jogo
 motor_global = MotorJogo("historia.yaml")
 
 
 class JogoService(rpyc.Service):
-    # --- Conexão ---
+    #conexao
     def on_connect(self, conn):
-        """Chamado quando um cliente se conecta ao servidor."""
-        self.conn = conn  # ✅ guarda a conexão para uso posterior
+        #chamado quando um cliente se conecta ao servidor
+        self.conn = conn  #guarda a conexão
         log.info(f"Novo cliente conectado: {conn}")
 
     def on_disconnect(self, conn):
-        """Chamado quando o cliente se desconecta."""
+        #chamado quando o cliente se desconecta.
         jogador = getattr(conn, "jogador", None)
         if jogador:
             log.info(f"Jogador '{jogador}' se desconectou.")
@@ -41,13 +41,13 @@ class JogoService(rpyc.Service):
 
     # --- Jogadores ---
     def exposed_entrar_no_jogo(self, jogador):
-        """Registra a entrada de um novo jogador."""
-        conn = self.conn  # ✅ agora existe
+        #registra a entrada de um novo jogador
+        conn = self.conn
         conn.jogador = jogador
         log.info(f"Jogador '{jogador}' entrou no jogo.")
         resposta = motor_global.adicionar_jogador(jogador)
 
-        # 🆕 Se o jogo acabou de começar, verifica se o primeiro trecho não tem opções
+        #se o jogo acabou de começar, verifica se o primeiro trecho não tem opções
         if isinstance(resposta, dict):
             return resposta
         return resposta
@@ -59,7 +59,7 @@ class JogoService(rpyc.Service):
         log.info(f"Lista de jogadores conectados: {jogadores}")
         return jogadores
 
-    # --- História ---
+    #história
     def exposed_obter_trecho(self):
         trecho = motor_global.obter_trecho_atual()
         log.info("Trecho atual solicitado pelo cliente.")
@@ -74,7 +74,7 @@ class JogoService(rpyc.Service):
         log.info("Nenhuma opção disponível para este trecho.")
         return {}
 
-    # --- Votação ---
+    #votacao
     def exposed_registrar_voto(self, jogador, opcao):
         try:
             log.info(f"Jogador '{jogador}' votou na opção {opcao}.")
@@ -86,13 +86,13 @@ class JogoService(rpyc.Service):
             return f"Erro ao registrar voto: {e}"
 
     def exposed_confirmar_continuar(self, nome_jogador):
-        """Recebe o clique de 'Continuar' do cliente e coordena o avanço do jogo."""
+        #recebe o clique de 'Continuar' do cliente e coordena o avanço do jogo
         try:
             log.info(f"🕹️ Jogador '{nome_jogador}' clicou em 'Continuar'.")
             resposta = motor_global.registrar_pronto(nome_jogador)
 
             if resposta["avancar"]:
-                log.info(f"✅ Todos confirmaram — avançando trecho. ({nome_jogador} foi o último a confirmar)")
+                log.info(f"Todos confirmaram — avançando trecho. ({nome_jogador} foi o último a confirmar)")
                 trecho_atual = motor_global.obter_trecho_atual()
                 log.debug(f"➡️ Trecho atual após avanço: {trecho_atual}")
                 return {
@@ -111,11 +111,11 @@ class JogoService(rpyc.Service):
                 }
 
         except Exception as e:
-            log.error(f"❌ Erro ao confirmar 'Continuar' para jogador '{nome_jogador}': {e}")
+            log.error(f"Erro ao confirmar 'Continuar' para jogador '{nome_jogador}': {e}")
             return {"acao": "erro", "mensagem": f"Erro ao continuar: {e}"}
 
     def exposed_obter_status_votacao(self):
-        """Permite que os clientes consultem o status da votação."""
+        #permite que os clientes consultem o status da votação
         status = motor_global.obter_status_votacao()
         log.info(f"Status da votação solicitado: {status}")
         return status
@@ -131,7 +131,7 @@ class JogoService(rpyc.Service):
         log.info("Chat solicitado por cliente.")
         return motor_global.obter_chat()
 
-    # --- Status do jogo ---
+    # status do jogo
     def exposed_obter_jogo_iniciado(self):
         status = motor_global.jogo_iniciado
         log.info(f"Estado do jogo solicitado: {'Iniciado' if status else 'Aguardando jogadores'}.")

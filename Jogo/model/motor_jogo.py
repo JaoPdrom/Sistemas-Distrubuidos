@@ -21,12 +21,12 @@ class MotorJogo:
         self.chat = [] #lista para armazenar as mensagens do chat
         self.jogadores_conectados = {}  #dicionario para armazenar os jogadores únicos
         self.jogo_iniciado = False #flag para verificar se o jogo foi iniciado
-        self.jogadores_prontos = set()  # quem clicou em "Continuar"
-        self.proximo_trecho_pendente = None  # trecho aguardando todos confirmarem
+        self.jogadores_prontos = set()  #quem clicou em "Continuar"
+        self.proximo_trecho_pendente = None  #trecho aguardando todos confirmarem
         self.lock = threading.RLock()
-        self.avancando = False  # flag para impedir confirmações simultâneas
-        self.resultado_calculado = False  # evita calcular mais de uma vez por rodada
-        self.ultimo_resultado = None  # salva o texto do último resultado da votação
+        self.avancando = False  #flag para impedir confirmações simultâneas
+        self.resultado_calculado = False  #evita calcular mais de uma vez por rodada
+        self.ultimo_resultado = None  #salva o texto do último resultado da votação
 
     def carregar_historia(self, arquivo: str) -> dict:
         """Carrega o arquivo YAML de história a partir de model/dao/."""
@@ -95,17 +95,17 @@ class MotorJogo:
 
             self.jogo_iniciado = True #marca o jogo como iniciado
 
-        # 🆕 Detecta se o trecho inicial não tem opções
+        #detecta se o trecho inicial não tem opções
         trecho = self.historia[self.trecho_atual]
         if not trecho.get("opcoes"):
             self.proximo_trecho_pendente = trecho.get("proximo")  # se houver “proximo” direto
             return {
-                "mensagem": f"🧭 O jogo começou! Trecho inicial: {self.trecho_atual}",
+                "mensagem": f"O jogo começou! Trecho inicial: {self.trecho_atual}",
                 "sem_opcoes": True
             }
 
         return {
-            "mensagem": f"🧭 O jogo começou! Trecho inicial: {self.trecho_atual}",
+            "mensagem": f"O jogo começou! Trecho inicial: {self.trecho_atual}",
             "sem_opcoes": False
         }
 
@@ -134,8 +134,8 @@ class MotorJogo:
                     "opcoes": opcoes_exibir
                 }
 
-        # 🧭 Cabeçalho do trecho
-        texto = f"\n🧭 Trecho atual: {self.trecho_atual}\n\n"
+        # Cabeçalho do trecho
+        texto = f"\nTrecho atual: {self.trecho_atual}\n\n"
 
         # 📖 Formata o texto principal mantendo quebras de linha
         texto_bruto = trecho.get("texto", "")
@@ -146,18 +146,18 @@ class MotorJogo:
             # Caso o texto venha em lista de parágrafos (formato alternativo)
             texto += "\n\n".join(p.strip() for p in texto_bruto if p.strip()) + "\n"
 
-        # 🏁 Caso não existam opções, considera fim da história
+        # Caso não existam opções, considera fim da história
         if not opcoes_exibir:
             texto += "\nFim da história\n"
             return texto
 
-        # ⚖️ Caso de empate
+        # Caso de empate
         if modo_empate:
             texto += "\nEmpate detectado! Vote novamente entre as opções abaixo:\n"
         else:
             texto += "\nOpções disponíveis:\n"
 
-        # 🗳️ Lista as opções numeradas
+        # Lista as opções numeradas
         for i, opcao in enumerate(opcoes_exibir, start=1):
             texto += f"  {i}. {opcao['texto']}\n"
 
@@ -199,10 +199,10 @@ class MotorJogo:
                     return resultado
                 else:
                     # se já calculado, devolve o último resultado
-                    return self.ultimo_resultado or "⏳ Resultado já calculado. Aguarde todos clicarem em 'Continuar'."
+                    return self.ultimo_resultado or "Resultado já calculado. Aguarde todos clicarem em 'Continuar'."
             else:
                 faltam = total_jogadores - total_votos
-                return f"✅ {jogador} registrou seu voto. Aguardando {faltam} voto(s)..."
+                return f"{jogador} registrou seu voto. Aguardando {faltam} voto(s)..."
 
 
     def calcular_resultados(self):
@@ -235,12 +235,12 @@ class MotorJogo:
 
             # empate (duas ou mais opções com a mesma contagem)
             if len(vencedoras) != 1:
-                log.debug(f"⚖️ Empate detectado: {dict(contagem)} — reiniciando votação.")
+                log.debug(f"Empate detectado: {dict(contagem)} — reiniciando votação.")
                 self.votos.clear()
                 for nome in self.jogadores_conectados:
                     self.jogadores_conectados[nome]["votou"] = False
                 self.resultado_calculado = False  # libera novo cálculo
-                self.ultimo_resultado = "⚖️ Empate! Votem novamente nas mesmas opções."
+                self.ultimo_resultado = "Empate! Votem novamente nas mesmas opções."
                 return self.ultimo_resultado
 
             # opção vencedora
@@ -254,15 +254,14 @@ class MotorJogo:
             # define o próximo trecho e armazena o resultado
             self.proximo_trecho_pendente = proximo_trecho
             self.ultimo_resultado = (
-                f"🏆 Opção {vencedor} venceu com {maior} voto(s)!\n"
-                "⏳ Aguardando todos clicarem em 'Continuar' para avançar..."
+                f"Opção {vencedor} venceu com {maior} voto(s)!\n"
+                "Aguardando todos clicarem em 'Continuar' para avançar..."
             )
 
             log.debug(
                 f"[RESULTADO] {self.ultimo_resultado} | pendente: {self.proximo_trecho_pendente}"
             )
 
-            # ⚠️ NÃO limpar votos aqui — apenas após todos clicarem em 'Continuar'
             return self.ultimo_resultado
 
     def obter_status_votacao(self):
@@ -289,14 +288,14 @@ class MotorJogo:
 
         # Todos já votaram
         if total_votos == total_jogadores:
-            return "✅ Todos os jogadores já votaram! Calculando resultado..."
+            return "Todos os jogadores já votaram! Calculando resultado..."
 
     def avancar_historia(self, proximo_trecho: str):
         """Thread-safe: avança a história para o próximo trecho e reinicia o ciclo de votação."""
         with self.lock:
             # 1) valida o trecho
             if proximo_trecho not in self.historia:
-                return "❌ Trecho inválido."
+                return "Trecho inválido."
 
             # 2) atualiza estado do jogo
             self.trecho_atual = proximo_trecho
@@ -312,10 +311,10 @@ class MotorJogo:
 
             if not opcoes:
                 # fim da história
-                return f"🏁 Fim da história! Último trecho: {self.trecho_atual}"
+                return f"Fim da história! Último trecho: {self.trecho_atual}"
 
             # 4) mensagem de sucesso
-            return f"➡️ Avançando para o trecho: {self.trecho_atual}"
+            return f"➡Avançando para o trecho: {self.trecho_atual}"
 
     def registrar_pronto(self, jogador):
         """Thread-safe e à prova de duplicação de avanço."""
@@ -344,7 +343,7 @@ class MotorJogo:
 
             # --- todos confirmaram ---
             if not faltantes and not self.avancando:
-                self.avancando = True  # 🔒 bloqueia novas confirmações
+                self.avancando = True  #bloqueia novas confirmações
                 log.debug("✅ Todos confirmaram. Avançando trecho...")
 
                 self.jogadores_prontos.clear()
@@ -356,11 +355,11 @@ class MotorJogo:
                     # Avança a história (já limpa votos e jogadores_prontos)
                     resultado = self.avancar_historia(proximo)
 
-                    # 🔄 Reseta as flags da rodada de votação
+                    #Reseta as flags da rodada de votação
                     self.resultado_calculado = False
                     self.ultimo_resultado = None
 
-                    self.avancando = False  # 🔓 libera novas confirmações
+                    self.avancando = False  #libera novas confirmações
                     log.debug(f"🧭 História avançada para: {self.trecho_atual}")
                     return {"avancar": True, "mensagem": resultado}
 

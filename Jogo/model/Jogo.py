@@ -25,15 +25,17 @@ class Jogo:
         if self.indice_atual < len(self.trechos):
             trecho = self.trechos[self.indice_atual]
             return trecho.get("texto", "Trecho sem texto")
-        return "🏁 Fim da história!"
+        return "Fim da história!"
 
     # --- Opções do trecho atual ---
     def obter_opcoes(self):
         if self.indice_atual < len(self.trechos):
             opcoes = self.trechos[self.indice_atual].get("opcoes", [])
+
             # Se for dicionário numerado
             if isinstance(opcoes, dict):
                 return {str(k): str(v) for k, v in opcoes.items()}
+
             # Se for lista de dicionários
             elif isinstance(opcoes, list):
                 resultado = {}
@@ -43,11 +45,11 @@ class Jogo:
                 return resultado
         return {}
 
-    # --- Jogadores ---
+    # --- jogadores ---
     def entrar_no_jogo(self, jogador):
         if jogador not in self.jogadores:
             self.jogadores[jogador] = True
-        return f"👋 {jogador} entrou no jogo!"
+        return f"{jogador} entrou no jogo!"
 
     def obter_jogadores(self):
         return list(self.jogadores.keys())
@@ -85,9 +87,9 @@ class Jogo:
         if len(vencedores) == 1:
             escolhido = vencedores[0]
             self.indice_atual += 1
-            resultado = f"🏆 Opção {escolhido} venceu! Avançando para o próximo trecho..."
+            resultado = f"Opção {escolhido} venceu! Avançando para o próximo trecho..."
         else:
-            resultado = "⚖️ Empate! Votação será repetida."
+            resultado = "Empate! Votação será repetida."
 
         self.votos = {}
         return resultado
